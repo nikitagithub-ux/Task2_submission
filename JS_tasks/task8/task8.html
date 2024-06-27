@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        text-align: center;
+    }
+    .text_color{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="form" style="text-align: center;">
+        <div>
+            First Name    <input type="text" id="name" placeholder="First Name">
+            <span class="text_color" id="name-error"></span><br><br>
+        </div>
+        <div>
+            Last Name    <input type="text" id="lname" placeholder="Last Name">
+            <span class="text_color" id="lname-error"></span><br><br>
+        </div>
+        <div>
+            Email    <input type="email" id="email" placeholder="Email">
+            <span class="text_color" id="email-error"></span><br><br>
+        </div>
+        <div>
+            Password    <input type="password" id="password" placeholder="Password">
+            <span class="text_color" id="password-error"></span><br><br>
+        </div>
+        <div>
+            Re-enter Password    <input type="password" id="rpassword" placeholder="Password">
+            <span class="text_color" id="rpassword-error"></span><br><br>
+        </div>
+        <div style="display:flex; justify-content: center;">
+            Gender
+            <div>
+            <div><input type="radio" id="male" name="fav_language" value="Male">Male</div>
+            <div><input type="radio" id="fe-male" name="fav_language" value="Fe-Male">Fe-Male</div>
+            <span class="text_color" id="gender-error"></span>
+            </div>
+        </div>
+        <div>
+            Age    <input type="text" id="age" placeholder="Age">
+            <span class="text_color" id="age-error"></span><br><br>
+        </div>
+        <div>
+            Phone Number    <input type="number" id="pno" placeholder="Phone Number">
+            <span class="text_color" id="pno-error"></span><br><br>
+        </div>
+        <div style="align-items: center; text-align: center;">
+        Address <textarea id="address" placeholder="address" rows="6" cols="10"></textarea>
+        <span class="text_color" id="address-error"></span><br><br>
+        </div>
+        <div>
+            State    <input type="text" id="state" placeholder="state">
+            <span class="text_color" id="state-error"></span><br><br>
+        </div>
+        <div>
+            <label for="country">Country </label>
+            <select name="country" id="country">
+                <option value="volvo">India</option>
+                <option value="saab">Usa</option>
+                <option value="opel">Russia</option>
+                <option value="audi">Dubai</option>
+              </select>
+        </div><br>
+        <div style="display: flex; justify-content: center;">
+            Language Known 
+            <div>
+                <input type="checkbox" id="one" name="lang1" value="English">
+                <label for="one"> English</label>
+                <input type="checkbox" id="two" name="lang2" value="Kannad">
+                <label for="two"> Kannad</label>
+                <input type="checkbox" id="three" name="lang3" value="Hindi">
+                <label for="three"> Hindi</label>
+                <input type="checkbox" id="four" name="lang4" value="Marathi">
+                <label for="four"> Marathi</label>
+            </div><br><br>
+        </div>
+        <input type="checkbox" id="checkbox2">I hearby declare all the given details are true<br><br>
+        <div>
+        <a href="#" id="login">Login to Ethnus Website</a><br><br>
+        </div>
+        <div>
+            <button type="button" class="btn btn-danger" style="border-radius: 20px;" onclick="error_checking()">Register</button>
+        </div>
+    </form>
+</body>
+<script src="task8.js"></script>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        .header_class{
+            max-width: 500px;
+            margin:auto ;
+        }
+        .nav-item{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Company Name</a>
+                <div class="d-flex">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Enterprise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-primary">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container text-center py-5">
+        <div class="text-center header_class">
+            <h1 class="fs-1">Pricing</h1>
+            <p class="text-center">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities
+            with little customization.</p>
+        </div>
+        <div class="row text-center row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4>
+                            Free
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            $0 <span class="text-muted">/ mo</span>
+                        </h1>
+                        <ul class="list-unstyled">
+                            <li>10 users included</li>
+                            <li>2 GB if storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-outline-primary ">Sign up for free</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+            <div class="col">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4>
+                            Pro
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            $15 <span class="text-muted">/ mo</span>
+                        </h1>
+                        <ul class="list-unstyled">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary ">Get started</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4>
+                            Enterprise
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            $29 <span class="text-muted">/ mo</span>
+                        </h1>
+                        <ul class="list-unstyled">
+                            <li>30 users included</li>
+                            <li>15 GB if storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-primary ">Contact us</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+    <footer class="row row-cols-9 py-5 my-5 border-top">
+        <div class="col">
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-muted">© 2021</p>
+        </div>
+        <div class="col">
+          <h5>Features</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cool Stuff</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Random Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Team Features</a></li>
+          </ul>
+        </div>
+    
+        <div class="col">
+          <h5>Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Resources</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Resources name</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Another Resources</a></li>
+          </ul>
+        </div>
+    
+        <div class="col">
+          <h5>About</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Team</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Location</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy</a></li>
+          </ul>
+        </div>
+      </footer>
+</body>
+</html>

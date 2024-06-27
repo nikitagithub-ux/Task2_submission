@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border_red{
+            border-color: red;
+        }
+        .red_text{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div>
+            Name: <input type="text" id="name">
+            <span class="red_text" id="Name-error"></span>
+        </div><br><br>
+        <div>
+            Email: <input type="Email" id="email">
+            <span class="red_text" id="Email-error"></span>
+        </div><br><br>
+        <div>
+            Website: <input type="url" id="website">
+            <span class="red_text" id="Website-error"></span>
+        </div><br><br>
+        <div style="display: flex; align-items: center;">
+            Message: <textarea rows="6" cols="10" id="message"></textarea>
+            <span class="red_text" id="Message-error"></span>
+        </div>
+        <button onclick="error_checking()" type="submit">Submit</button>
+    </form>
+</body>
+<script src="task5.js"></script>
+</html>
